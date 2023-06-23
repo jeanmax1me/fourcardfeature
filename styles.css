@@ -1,0 +1,209 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* Example usage */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 15px;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Reset specific elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+  
+    /* Neutral */
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+  
+  .grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    min-width: 309px;
+    min-height: 221px;
+    border-radius: 10px;
+  }
+  
+  body {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 104px;
+    background-color: var(--VeryLightGray);
+    color: var(--GrayishBlue);
+  }
+
+  .headerbold {
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600; /* Bold */
+    font-size: 2rem;
+    padding-bottom: 30px;
+    color: var(--VeryDarkBlue);
+  }
+
+  .bigheader {
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+  }
+
+  .normaltext {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 80px;
+  }
+
+  .grid-item:nth-child(1) {
+    border-top: 4px solid var(--Cyan);
+  }
+
+  .grid-item:nth-child(2) {
+    border-top: 4px solid var(--Red);
+  }
+
+  .grid-item:nth-child(3) {
+    border-top: 4px solid var(--Orange);
+  }
+
+  .grid-item:nth-child(4) {
+    border-top: 4px solid var(--Blue);
+  }
+
+  h3 {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--VeryDarkBlue);
+  }
+
+.grid-item p {
+    font-weight: 200;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: var(--VeryLightBlue);
+}
+
+.grid-item {
+    background-color: white;
+    box-shadow: 0 10px 20px -8px var(--GrayishBlue);
+    position: relative;
+      }
+      
+      .grid-item img {
+        position: absolute; /* Position the icon image */
+        bottom: 1.5rem; /* Align it to the bottom */
+        right: 1.5rem; /* Align it to the right */
+      }
+
+      footer {
+        padding-top: 65px;
+      }
+
+      @media (min-width: 1024px) {
+        .grid-container {
+            padding-left: 165px;
+            padding-right: 165px;
+    
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-gap: 20px;
+              }
+          
+        .grid-item {
+            max-height: 251px;
+        }
+.grid-item:nth-child(1) {
+    grid-area: 2 / 1 / 4 / 2;
+}
+.grid-item:nth-child(2) {
+    grid-area: 1 / 2 / 3 / 3;
+    }
+.grid-item:nth-child(3) {
+    grid-area: 3 / 2 / 5 / 3;
+}
+.grid-item:nth-child(4) {
+    grid-area: 2 / 3 / 4 / 4;
+}
+span {
+    display: block;
+}
+
+}
+
+      
